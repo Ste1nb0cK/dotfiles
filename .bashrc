@@ -92,7 +92,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 #mounting my HDD
 alias bigboy='sudo fdisk -l | python3 ~/Documents/Scripts/MountingHDD/getbig.py'
 #unmounting my HDD
-alias bigboy_aus='sudo umount /SanJuanWolf'
+alias bigboy_aus=' echo "Unmounting";
+                    sudo umount /SanJuanWolf;
+                    echo "-------------------------------Estoy chikito-----------------------------------"'
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -114,7 +116,7 @@ export PATH=/home/ste1nb0ck/.local/bin:$PATH
 export PATH=/home/ste1nb0ck/sage:$PATH
 #Julia
 export PATH=/home/ste1nb0ck/julia:$PATH
-#Jotero
+#Zotero
 export PATH=/home/ste1nb0ck/zotero/Zotero_linux-x86_64:$PATH
 #Appimages
 export PATH=/home/ste1nb0ck/AppImages:$PATH
