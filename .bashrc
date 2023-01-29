@@ -127,8 +127,8 @@ export PATH=~/.emacs.d/bin:$PATH
 export PATH=~/spack/bin:$PATH
 #Go
 export PATH=/usr/local/go/bin:$PATH
-#GOPATH
-
+#Exercism
+export PATH=~/bin:$PATH
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/ste1nb0ck/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
