@@ -116,6 +116,7 @@ export PATH=/home/ste1nb0ck/.local/bin:$PATH
 export PATH=/home/ste1nb0ck/sage:$PATH
 #Julia
 export PATH=/home/ste1nb0ck/julia:$PATH
+
 #Zotero
 export PATH=/home/ste1nb0ck/zotero/Zotero_linux-x86_64:$PATH
 #Appimages
@@ -124,6 +125,10 @@ export PATH=/home/ste1nb0ck/AppImages:$PATH
 export PATH=/home/ste1nb0ck/.emacs.d/bin:$PATH
 #Spack
 export PATH=/home/ste1nb0ck/spack/bin:$PATH
+#Go
+export PATH=/usr/local/go/bin:$PATH
+#GOPATH
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/ste1nb0ck/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
