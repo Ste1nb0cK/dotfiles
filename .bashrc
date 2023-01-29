@@ -86,16 +86,17 @@ fi
 
 ################ALIASES########################################
 #activating Spack shell support
-alias spack_activate='. /home/ste1nb0ck/spack/share/spack/setup-env.sh'
+alias spack_activate='. ~/spack/share/spack/setup-env.sh'
 #dotfile managment
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 #mounting my HDD
 alias bigboy='sudo fdisk -l | python3 ~/Documents/Scripts/MountingHDD/getbig.py'
 #unmounting my HDD
-alias bigboy_aus=' echo "Unmounting";
+alias bigboy_aus='echo "Unmounting";
                     sudo umount /SanJuanWolf;
                     echo "-------------------------------Estoy chikito-----------------------------------"'
-
+#make the bash prompt simpler (do not show the working directory)
+alias simpler="export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\[\033[00m\]\$ ' "
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -111,20 +112,19 @@ if ! shopt -oq posix; then
   fi
 fi
 #stuff for Jupyter
-export PATH=/home/ste1nb0ck/.local/bin:$PATH
+export PATH=~/.local/bin:$PATH
 #Sage
-export PATH=/home/ste1nb0ck/sage:$PATH
+export PATH=~/sage:$PATH
 #Julia
-export PATH=/home/ste1nb0ck/julia:$PATH
-
+export PATH=~/julia:$PATH
 #Zotero
-export PATH=/home/ste1nb0ck/zotero/Zotero_linux-x86_64:$PATH
+export PATH=~/zotero/Zotero_linux-x86_64:$PATH
 #Appimages
-export PATH=/home/ste1nb0ck/AppImages:$PATH
+export PATH=~/AppImages:$PATH
 #Doom emacs
-export PATH=/home/ste1nb0ck/.emacs.d/bin:$PATH
+export PATH=~/.emacs.d/bin:$PATH
 #Spack
-export PATH=/home/ste1nb0ck/spack/bin:$PATH
+export PATH=~/spack/bin:$PATH
 #Go
 export PATH=/usr/local/go/bin:$PATH
 #GOPATH
